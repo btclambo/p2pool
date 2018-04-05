@@ -19,7 +19,7 @@ SUBSIDY_FUNC = lambda height: 50*100000000 >> (height + 1)//210000
 POW_FUNC = data.hash256
 BLOCK_PERIOD = 600 # s
 SYMBOL = 'BTC'
-CONF_FILE_FUNC = lambda: os.path.join(os.path.join(os.environ['APPDATA'], 'Bitcoin') if platform.system() == 'Windows' else os.path.expanduser('~/Library/Application Support/Bitcoin/') if platform.system() == 'Darwin' else os.path.expanduser('/media/Datos/.bitcoinlambo'), 'bitcoinlambo.conf')
+CONF_FILE_FUNC = lambda: os.path.join(os.path.join(os.environ['APPDATA'], 'Bitcoin') if platform.system() == 'Windows' else os.path.expanduser('~/Library/Application Support/Bitcoin/') if platform.system() == 'Darwin' else os.path.expanduser('/media/Datos/.bitcoinlambod'), 'bitcoinlambo.conf')
 BLOCK_EXPLORER_URL_PREFIX = 'https://blockchain.info/block/'
 ADDRESS_EXPLORER_URL_PREFIX = 'https://blockchain.info/address/'
 TX_EXPLORER_URL_PREFIX = 'https://blockchain.info/tx/'
